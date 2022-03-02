@@ -1,0 +1,5 @@
+Use State hook:
+
+Use Reducer hook: reduces code by letting us change different states 
+single systems that keep tracks of all states that happen during one 
+state change

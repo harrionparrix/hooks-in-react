@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Hookusestate from './Mycomponents/Hookusestate';
+import UseReducer from './Mycomponents/UseReducer';
+import UseState from './Mycomponents/UseState';
+import UseEffect from './Mycomponents/UseEffect';
+import UseRef from './Mycomponents/UseRef';
+
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+import { useEffect, useRef } from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    React hooks :
+    {/* <Routes>
+      <Route path="/Use">
+      <Hookusestate/>
+      </Route>
+      <Route path="/Reducer">
+      <UseReducer/>
+      </Route>
+    </Routes> */}
+    <Hookusestate/>
+    <UseState/>
+    <UseReducer/>
+    <UseEffect/>
+    <UseRef/>
+    </>
   );
 }
 
